@@ -4,11 +4,29 @@
 
 A professional command-line utility for generating high-quality data structure implementations with a single command.
 
-## Overview
+<div align="center">
+  <img src="data/demo.png" alt="DSLord Demo" width="700"/>
+</div>
+
+## 📋 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Available Data Structures](#available-data-structures)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Implementation Details](#implementation-details)
+- [How It Works](#how-it-works)
+- [Contributing](#contributing)
+- [License](#license)
+- [Help](#help)
+- [Acknowledgments](#acknowledgments)
+
+## 🔍 Overview
 
 DSLord is a powerful tool designed for computer science students and professionals who need quick access to well-implemented, error-free data structure implementations. With a simple command, you can generate production-ready code for various data structures.
 
-## Features
+## ✨ Features
 
 - **Multiple Data Structures**: Generate 10+ different data structures
 - **Clean Code**: Well-documented, properly designed implementations
@@ -17,7 +35,7 @@ DSLord is a powerful tool designed for computer science students and professiona
 - **Example Usage**: Includes sample code demonstrating how to use each data structure
 - **Categorized Organization**: Data structures organized by type (Linear, Linked, Tree, etc.)
 
-## Available Data Structures
+## 📊 Available Data Structures
 
 ### Linear Data Structures
 - Stack (LIFO)
@@ -37,7 +55,7 @@ DSLord is a powerful tool designed for computer science students and professiona
 ### Hash-based Data Structures
 - Hash Table (with separate chaining)
 
-## Installation
+## 💻 Installation
 
 ### Prerequisites
 - C++ compiler (GCC, Clang, MSVC, etc.)
@@ -61,11 +79,15 @@ DSLord is a powerful tool designed for computer science students and professiona
    ./dslord output_file.cpp -stack -queue
    ```
 
-## Usage
+## 🚀 Usage
 
 ```
 dslord <output_file> [-datastructure1] [-datastructure2] ... [-all]
 ```
+
+<div align="center">
+  <img src="data/help.png" alt="DSLord Help Screen" width="700"/>
+</div>
 
 ### Examples
 
@@ -101,12 +123,15 @@ dslord complete.cpp -all
 | -all | All data structures |
 | -h, --help | Display help information |
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 dslord/
 ├── dslord.cpp       # Main source code
 ├── dslord.exe       # Compiled program (Windows)
+├── data/                 # Images and documentation
+│   ├── demo.png          # Demo screenshot
+│   └── help.png          # Help screen screenshot
 ├── snippets/             # Data structure implementations
 │   ├── array.cpp         # Dynamic Array implementation
 │   ├── bst.cpp           # Binary Search Tree implementation
@@ -121,7 +146,7 @@ dslord/
 └── README.md             # Documentation
 ```
 
-## Implementation Details
+## 🔧 Implementation Details
 
 Each data structure is implemented with the following features:
 
@@ -131,7 +156,7 @@ Each data structure is implemented with the following features:
 - **Debug Utilities**: Display functions for easy debugging
 - **Standard C++ Compliance**: No external dependencies
 
-## How It Works
+## ⚙️ How It Works
 
 1. The user specifies which data structures they want via command-line flags
 2. DSLord reads the corresponding snippets from the snippets/ directory
@@ -139,7 +164,7 @@ Each data structure is implemented with the following features:
 4. The main function is generated with example usage of all selected data structures
 5. The final file is written to the specified output path
 
-## Contributing
+## 👥 Contributing
 
 Contributions are welcome! If you'd like to add more data structures or improve existing ones:
 
@@ -149,11 +174,21 @@ Contributions are welcome! If you'd like to add more data structures or improve 
 4. Update the main program to include your new data structure
 5. Submit a pull request
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
+## ❓ Help
+
+If you need help using DSLord, you can run:
+
+```
+dslord -h
+```
+
+This will display the help information with all available commands and options.
+
+## 🙏 Acknowledgments
 
 - Developed as an educational tool for computer science students
 - Inspired by the need for quick access to reliable data structure implementations
